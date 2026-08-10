@@ -104,6 +104,7 @@ nav{
     font-size:32px;
     font-weight:700;
     color:#fff;
+    white-space:nowrap;
 }
 
 
@@ -2152,4 +2153,657 @@ section{
     background:#8b5cf6;
     transform:translateY(-5px);
     box-shadow:0 10px 25px rgba(139,92,246,.35);
+}
+/* =====================================
+        NEROXA MOBILE FIX
+===================================== */
+
+@media (max-width: 600px){
+
+    /* GLOBAL */
+
+    html,
+    body{
+        width:100%;
+        max-width:100%;
+        overflow-x:hidden;
+    }
+
+    .container{
+        width:92%;
+        max-width:100%;
+        margin:0 auto;
+    }
+
+    section{
+        padding:75px 0;
+    }
+
+
+    /* NAVBAR */
+
+    header{
+        width:100%;
+    }
+
+    nav{
+        height:75px;
+    }
+
+    .logo{
+        gap:8px;
+        min-width:0;
+    }
+
+    .logo-img{
+        width:38px;
+        height:38px;
+        flex-shrink:0;
+    }
+
+    .logo-text{
+    font-size:32px;
+    font-weight:700;
+    color:#fff;
+    white-space:nowrap;
+}
+    .nav-menu{
+        display:none;
+    }
+
+    nav > .primary-btn{
+        display:none;
+    }
+
+
+    /* HERO */
+
+    .hero{
+        min-height:auto;
+        padding-top:120px;
+        padding-bottom:70px;
+    }
+
+    .hero-wrapper{
+        display:flex;
+        flex-direction:column;
+        gap:45px;
+        width:100%;
+    }
+
+    .hero-content{
+        width:100%;
+        min-width:0;
+    }
+
+    .hero-badge{
+        max-width:100%;
+        font-size:11px;
+        padding:8px 14px;
+        white-space:normal;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:36px;
+        line-height:1.15;
+        margin:20px 0;
+        overflow-wrap:anywhere;
+    }
+
+    .hero-content p{
+        font-size:15px;
+        line-height:1.7;
+        max-width:100%;
+    }
+
+    .hero-buttons{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        gap:14px;
+        margin-top:28px;
+    }
+
+    .hero-buttons a{
+        width:100%;
+        text-align:center;
+        padding:14px 20px;
+    }
+
+    .hero-stats{
+        width:100%;
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:10px;
+        margin-top:40px;
+    }
+
+    .stat-item{
+        min-width:0;
+        text-align:center;
+    }
+
+    .stat-item h3{
+        font-size:23px;
+    }
+
+    .stat-item p{
+        font-size:12px;
+        line-height:1.4;
+    }
+
+
+    /* HERO PREVIEW */
+
+    .hero-preview{
+        width:100%;
+        max-width:100%;
+        min-width:0;
+    }
+
+    .preview-window{
+        width:100%;
+        max-width:100%;
+        border-radius:18px;
+    }
+
+    .window-body{
+        padding:22px;
+    }
+
+    .preview-title{
+        max-width:75%;
+        height:28px;
+    }
+
+    .preview-button{
+        max-width:130px;
+        height:40px;
+    }
+
+
+    /* SECTION HEADINGS */
+
+    .section-heading{
+        margin-bottom:40px;
+        padding:0 5px;
+    }
+
+    .section-heading span{
+        font-size:13px;
+    }
+
+    .section-heading h2{
+        font-size:30px;
+        line-height:1.2;
+        overflow-wrap:anywhere;
+    }
+
+    .section-heading p{
+        font-size:14px;
+        line-height:1.7;
+    }
+
+
+    /* ABOUT */
+
+    .about{
+        padding:80px 0;
+    }
+
+    .about-grid{
+        display:flex;
+        flex-direction:column;
+        gap:40px;
+    }
+
+    .about-content{
+        width:100%;
+        min-width:0;
+    }
+
+    .about-content h2{
+        font-size:32px;
+        line-height:1.2;
+    }
+
+    .about-content p{
+        font-size:15px;
+        line-height:1.8;
+    }
+
+    .about-content .primary-btn{
+        width:100%;
+        text-align:center;
+    }
+
+
+    /* FOUNDER CARD */
+
+    .founder-card{
+        width:100%;
+        max-width:100%;
+        min-width:0;
+    }
+
+    .founder-image{
+        width:100%;
+        height:auto;
+        min-height:0;
+        aspect-ratio:4 / 5;
+        object-fit:cover;
+    }
+
+    .founder-card h3{
+        font-size:27px;
+        margin-top:22px;
+    }
+
+    .founder-card span{
+        font-size:15px;
+    }
+
+    .founder-card p{
+        padding:0 20px 25px;
+        font-size:14px;
+    }
+
+    .founder-stats{
+        grid-template-columns:1fr 1fr;
+        padding:0 18px 25px;
+    }
+
+    .founder-stat{
+        padding:14px 10px;
+    }
+
+    .founder-stat h4{
+        font-size:23px;
+    }
+
+    .founder-stat span{
+        font-size:12px;
+    }
+
+
+    /* ABOUT FEATURES */
+
+    .about-features{
+        grid-template-columns:1fr;
+        gap:18px;
+        margin-top:45px;
+    }
+
+    .feature-box{
+        padding:28px 20px;
+    }
+
+
+    /* SERVICES */
+
+    .services-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .service-card{
+        padding:28px 22px;
+        width:100%;
+        min-width:0;
+    }
+
+    .service-card h3{
+        font-size:20px;
+    }
+
+    .service-card p{
+        font-size:14px;
+    }
+
+
+    /* PRICING */
+
+    .pricing-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .pricing-card{
+        width:100%;
+        padding:30px 22px;
+        min-width:0;
+    }
+
+    .pricing-card h3{
+        font-size:21px;
+    }
+
+    .pricing-card h2{
+        font-size:34px;
+    }
+
+    .pricing-card ul li{
+        font-size:14px;
+    }
+
+    .pricing-card .primary-btn{
+        width:100%;
+        text-align:center;
+    }
+
+
+    /* PACKAGES */
+
+    .package-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .package-card{
+        width:100%;
+        padding:30px 22px;
+        min-width:0;
+    }
+
+    .package-card h3{
+        font-size:25px;
+    }
+
+    .package-card h2{
+        font-size:36px;
+    }
+
+    .package-card.popular{
+        transform:none;
+    }
+
+    .package-card.popular:hover{
+        transform:translateY(-5px);
+    }
+
+    .popular-tag{
+        font-size:10px;
+        padding:7px 11px;
+        top:15px;
+        right:15px;
+    }
+
+    .package-card .primary-btn{
+        width:100%;
+        text-align:center;
+    }
+
+
+    /* WHY US */
+
+    .why-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .why-card{
+        padding:28px 22px;
+    }
+
+    .why-card h3{
+        font-size:20px;
+    }
+
+    .why-card p{
+        font-size:14px;
+    }
+
+
+    /* TESTIMONIALS */
+
+    .testimonial-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .testimonial-card{
+        padding:28px 22px;
+    }
+
+    .testimonial-card p{
+        font-size:14px;
+        line-height:1.7;
+    }
+
+
+    /* PORTFOLIO */
+
+    .portfolio-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .portfolio-card{
+        min-height:220px;
+        padding:28px 22px;
+    }
+
+    .portfolio-card h3{
+        font-size:21px;
+    }
+
+    .portfolio-card p{
+        font-size:14px;
+    }
+
+
+    /* PROCESS */
+
+    .process-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .process-card{
+        padding:28px 22px;
+    }
+
+    .process-card h3{
+        font-size:34px;
+    }
+
+    .process-card h4{
+        font-size:20px;
+    }
+
+    .process-card p{
+        font-size:14px;
+    }
+
+
+    /* CONTACT */
+
+    .contact-box{
+        padding:50px 22px;
+        border-radius:22px;
+        width:100%;
+    }
+
+    .contact-box h2{
+        font-size:30px;
+        line-height:1.25;
+        overflow-wrap:anywhere;
+    }
+
+    .contact-box p{
+        font-size:15px;
+        line-height:1.6;
+    }
+
+    .contact-box .primary-btn{
+        width:100%;
+        text-align:center;
+    }
+
+
+    /* FOOTER */
+
+    .footer{
+        padding:60px 0 25px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    .footer-brand p{
+        font-size:14px;
+    }
+
+    .footer-column{
+        gap:12px;
+    }
+
+    .footer-column p,
+    .footer-column a{
+        font-size:14px;
+        overflow-wrap:anywhere;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        gap:12px;
+        text-align:center;
+        font-size:12px;
+        line-height:1.6;
+    }
+
+
+    /* WHATSAPP BUTTON */
+
+    .whatsapp-btn{
+        width:52px;
+        height:52px;
+        right:16px;
+        bottom:16px;
+        font-size:27px;
+    }
+
+
+    /* ANIMATION SAFETY */
+
+    .service-card,
+    .portfolio-card,
+    .process-card,
+    .contact-box{
+        max-width:100%;
+    }
+
+}
+
+
+/* =====================================
+      EXTRA SMALL PHONES
+===================================== */
+
+@media (max-width:380px){
+
+    .container{
+        width:94%;
+    }
+
+    .logo-text{
+        font-size:19px;
+    }
+
+    .hero-content h1{
+        font-size:32px;
+    }
+
+    .section-heading h2{
+        font-size:27px;
+    }
+
+    .hero-stats{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .stat-item{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:8px;
+    }
+
+    .stat-item h3{
+        font-size:22px;
+    }
+
+    .stat-item p{
+        font-size:12px;
+    }
+
+    .founder-image{
+        aspect-ratio:4 / 5;
+    }
+
+}
+/* =====================================
+        DESKTOP BOOK A CALL FIX
+===================================== */
+
+.primary-btn,
+.btn{
+    white-space: nowrap;
+    min-width: 150px;
+    text-align: center;
+}
+
+/* Navbar Book a Call button */
+nav .primary-btn,
+nav .btn{
+    padding: 14px 28px;
+    min-width: 160px;
+    font-size: 16px;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+/* Desktop navbar spacing */
+@media(min-width:1001px){
+
+    nav{
+        gap:25px;
+    }
+
+    .nav-menu{
+        gap:30px;
+        flex-shrink: 1;
+    }
+
+}
+@media(min-width:701px){
+
+    nav{
+        gap:20px;
+    }
+
+    .logo{
+        flex-shrink:0;
+    }
+
+    .logo-text{
+        font-size:30px;
+        white-space:nowrap;
+    }
+
+    .nav-menu{
+        gap:28px;
+        flex-shrink:0;
+    }
+
+    .btn,
+    .primary-btn{
+        white-space:nowrap;
+        flex-shrink:0;
+    }
+
 }
