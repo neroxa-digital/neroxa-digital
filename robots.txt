@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://neroxa-digital.github.io/sitemap.xml
+Sitemap: https://neroxa-digital.github.io/neroxa-digital/sitemap.xml
