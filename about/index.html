@@ -8,19 +8,35 @@
 
 <title>Vansh Pratihar | Founder of Neroxa Digital</title>
 
-<meta name="description" content="Vansh Pratihar is the Founder & CEO of Neroxa Digital, a digital agency focused on website development, AI automation, SEO, branding and digital marketing.">
+<meta name="description"
+content="Vansh Pratihar is the Founder & CEO of Neroxa Digital, an entrepreneur focused on digital technology, AI automation, websites, branding and building future-focused startups.">
 
 <meta name="author" content="Vansh Pratihar">
 
 <meta name="robots" content="index, follow">
 
-<link rel="canonical" href="https://neroxa-digital.github.io/neroxa-digital/about/">
+<link rel="canonical"
+href="https://neroxa-digital.github.io/neroxa-digital/about/">
+
+<!-- Open Graph -->
 
 <meta property="og:type" content="profile">
-<meta property="og:title" content="Vansh Pratihar | Founder of Neroxa Digital">
-<meta property="og:description" content="Vansh Pratihar is the Founder & CEO of Neroxa Digital.">
-<meta property="og:image" content="https://neroxa-digital.github.io/neroxa-digital/assets/images/founder.jpg">
-<meta property="og:url" content="https://neroxa-digital.github.io/neroxa-digital/about/">
+
+<meta property="og:title"
+content="Vansh Pratihar | Founder & Entrepreneur">
+
+<meta property="og:description"
+content="Founder & CEO of Neroxa Digital, entrepreneur and aspiring technology founder focused on building digital businesses and future startups.">
+
+<meta property="og:image"
+content="https://neroxa-digital.github.io/neroxa-digital/assets/images/founder.jpg">
+
+<meta property="og:url"
+content="https://neroxa-digital.github.io/neroxa-digital/about/">
+
+<meta property="og:site_name"
+content="Neroxa Digital">
+
 
 <!-- Person Schema -->
 
@@ -29,25 +45,38 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "@id": "https://neroxa-digital.github.io/neroxa-digital/about/#vansh-pratihar",
+
   "name": "Vansh Pratihar",
+
   "jobTitle": "Founder & CEO",
+
   "url": "https://neroxa-digital.github.io/neroxa-digital/about/",
+
   "image": "https://neroxa-digital.github.io/neroxa-digital/assets/images/founder.jpg",
-  "description": "Vansh Pratihar is the Founder & CEO of Neroxa Digital, a digital agency focused on website development, AI automation, SEO, branding and digital marketing.",
+
+  "description": "Vansh Pratihar is the Founder & CEO of Neroxa Digital and an entrepreneur focused on digital technology, AI automation, websites, branding, digital marketing and future startup ventures.",
+
   "worksFor": {
     "@type": "Organization",
     "@id": "https://neroxa-digital.github.io/neroxa-digital/#organization",
     "name": "Neroxa Digital",
     "url": "https://neroxa-digital.github.io/neroxa-digital/"
   },
+
   "sameAs": [
     "https://x.com/vansh_pratihar",
-    "https://www.linkedin.com/in/neroxa-digital-72b333426/"
+    "https://www.linkedin.com/in/neroxa-digital-72b333426/",
+    "https://www.instagram.com/neroxa_digital/"
   ]
 }
 </script>
 
+
 <style>
+
+/* =========================
+   RESET
+========================= */
 
 * {
     margin: 0;
@@ -55,147 +84,587 @@
     box-sizing: border-box;
 }
 
+
+/* =========================
+   BODY
+========================= */
+
 body {
-    font-family: Arial, sans-serif;
-    background: #07070b;
+
+    font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+    background:
+    radial-gradient(
+        circle at 80% 10%,
+        rgba(255,255,255,0.06),
+        transparent 30%
+    ),
+    #07070b;
+
     color: #ffffff;
+
     line-height: 1.7;
+
+    overflow-x: hidden;
 }
 
+
+/* =========================
+   CONTAINER
+========================= */
+
 .container {
+
     width: 90%;
-    max-width: 1100px;
+
+    max-width: 1150px;
+
     margin: auto;
 }
 
+
+/* =========================
+   HEADER
+========================= */
+
 header {
+
     padding: 25px 0;
-    border-bottom: 1px solid #222;
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.08);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    background:
+    rgba(7,7,11,0.85);
+
+    backdrop-filter:
+    blur(15px);
 }
+
 
 nav {
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 }
+
 
 .logo {
+
     color: #ffffff;
+
     text-decoration: none;
+
     font-size: 22px;
-    font-weight: bold;
+
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
 }
+
 
 .back {
-    color: #aaa;
+
+    color: #999;
+
     text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
 }
+
 
 .back:hover {
-    color: #fff;
+
+    color: #ffffff;
 }
+
+
+/* =========================
+   HERO
+========================= */
 
 .hero {
-    padding: 80px 0;
+
+    padding: 110px 0 100px;
+
+    position: relative;
 }
+
+
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    background:
+    rgba(255,255,255,0.04);
+
+    border-radius: 50%;
+
+    filter: blur(80px);
+
+    top: 50px;
+
+    right: -100px;
+
+    pointer-events: none;
+}
+
 
 .profile {
+
     display: grid;
-    grid-template-columns: 350px 1fr;
-    gap: 60px;
+
+    grid-template-columns:
+    360px 1fr;
+
+    gap: 75px;
+
     align-items: center;
+
+    position: relative;
+
+    z-index: 2;
 }
+
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.profile-image {
+
+    position: relative;
+}
+
+
+.profile-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: -10px;
+
+    border:
+
+    1px solid
+    rgba(255,255,255,0.12);
+
+    border-radius: 24px;
+
+    z-index: -1;
+}
+
 
 .profile img {
+
     width: 100%;
+
     border-radius: 20px;
+
     display: block;
+
+    filter:
+    grayscale(10%)
+    contrast(105%);
+
+    transition: 0.5s;
 }
+
+
+.profile img:hover {
+
+    transform:
+    translateY(-5px);
+
+    filter:
+    grayscale(0%)
+    contrast(105%);
+}
+
+
+/* =========================
+   BADGE
+========================= */
 
 .badge {
+
     display: inline-block;
-    color: #aaa;
-    font-size: 14px;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
+
+    color: #999;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+
+    text-transform: uppercase;
 }
+
+
+/* =========================
+   HEADINGS
+========================= */
 
 h1 {
-    font-size: 52px;
-    line-height: 1.1;
-    margin-bottom: 15px;
-}
 
-.role {
-    font-size: 20px;
-    color: #aaa;
-    margin-bottom: 25px;
-}
+    font-size: 58px;
 
-p {
-    color: #bdbdbd;
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
     margin-bottom: 18px;
 }
 
-.section {
-    padding: 50px 0;
-    border-top: 1px solid #222;
+
+.role {
+
+    font-size: 21px;
+
+    color: #aaa;
+
+    margin-bottom: 28px;
 }
 
-h2 {
-    font-size: 32px;
+
+p {
+
+    color: #b9b9b9;
+
     margin-bottom: 20px;
+
+    font-size: 16px;
 }
 
-.links {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+
+strong {
+
+    color: #ffffff;
 }
 
-.links a {
-    color: white;
-    text-decoration: none;
-    border: 1px solid #333;
-    padding: 10px 18px;
-    border-radius: 8px;
-}
 
-.links a:hover {
-    background: #17171d;
-}
+/* =========================
+   CTA
+========================= */
 
 .cta {
+
     display: inline-block;
+
     margin-top: 15px;
-    padding: 13px 22px;
-    background: white;
-    color: black;
+
+    padding: 14px 24px;
+
+    background: #ffffff;
+
+    color: #000000;
+
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
+
+    border-radius: 9px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
 }
+
+
+.cta:hover {
+
+    transform:
+    translateY(-3px);
+
+    box-shadow:
+    0 10px 30px
+    rgba(255,255,255,0.12);
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+
+    padding: 75px 0;
+
+    border-top:
+    1px solid
+    rgba(255,255,255,0.08);
+}
+
+
+h2 {
+
+    font-size: 35px;
+
+    letter-spacing: -1px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   VISION GRID
+========================= */
+
+.vision-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-top: 35px;
+}
+
+
+.vision-card {
+
+    padding: 30px;
+
+    border:
+    1px solid
+    rgba(255,255,255,0.09);
+
+    border-radius: 15px;
+
+    background:
+    rgba(255,255,255,0.025);
+
+    transition: 0.3s;
+}
+
+
+.vision-card:hover {
+
+    transform:
+    translateY(-5px);
+
+    border-color:
+    rgba(255,255,255,0.18);
+
+    background:
+    rgba(255,255,255,0.04);
+}
+
+
+.vision-card h3 {
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+}
+
+
+.vision-card p {
+
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   FUTURE STARTUP
+========================= */
+
+.future {
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(255,255,255,0.035),
+        transparent
+    );
+
+    border:
+    1px solid
+    rgba(255,255,255,0.08);
+
+    border-radius: 18px;
+
+    padding: 40px;
+
+    margin-top: 30px;
+}
+
+
+.future-label {
+
+    color: #888;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 12px;
+}
+
+
+.future h3 {
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   MISSION
+========================= */
+
+.mission {
+
+    font-size: 23px;
+
+    line-height: 1.5;
+
+    color: #e5e5e5;
+
+    max-width: 850px;
+}
+
+
+/* =========================
+   OFFICIAL LINKS
+========================= */
+
+.links {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-top: 25px;
+}
+
+
+.links a {
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border:
+    1px solid
+    rgba(255,255,255,0.12);
+
+    padding: 11px 19px;
+
+    border-radius: 9px;
+
+    transition: 0.3s;
+}
+
+
+.links a:hover {
+
+    background:
+    rgba(255,255,255,0.06);
+
+    border-color:
+    rgba(255,255,255,0.25);
+
+    transform:
+    translateY(-2px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
-    padding: 30px 0;
-    border-top: 1px solid #222;
-    color: #777;
+
+    padding: 35px 0;
+
+    border-top:
+    1px solid
+    rgba(255,255,255,0.08);
+
+    color: #666;
+
+    font-size: 14px;
 }
 
-@media (max-width: 700px) {
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 750px) {
 
     .profile {
+
         grid-template-columns: 1fr;
-        gap: 30px;
+
+        gap: 40px;
     }
+
+
+    .profile-image {
+
+        max-width: 340px;
+
+        margin: auto;
+    }
+
 
     h1 {
-        font-size: 38px;
+
+        font-size: 42px;
     }
 
-    .profile img {
-        max-width: 350px;
-        margin: auto;
+
+    .role {
+
+        font-size: 18px;
+    }
+
+
+    .vision-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .future {
+
+        padding: 28px;
+    }
+
+
+    .mission {
+
+        font-size: 20px;
     }
 
 }
@@ -204,7 +673,13 @@ footer {
 
 </head>
 
+
 <body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
@@ -227,7 +702,13 @@ Neroxa Digital
 </header>
 
 
+
 <main>
+
+
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero">
 
@@ -235,7 +716,8 @@ Neroxa Digital
 
 <div class="profile">
 
-<div>
+
+<div class="profile-image">
 
 <img
 src="../assets/images/founder.jpg"
@@ -248,28 +730,38 @@ alt="Vansh Pratihar, Founder and CEO of Neroxa Digital"
 <div>
 
 <span class="badge">
-FOUNDER PROFILE
+Founder Profile
 </span>
+
 
 <h1>
 Vansh Pratihar
 </h1>
 
+
 <div class="role">
 Founder & CEO — Neroxa Digital
 </div>
 
-<p>
-Vansh Pratihar is the Founder & CEO of
-<strong>Neroxa Digital</strong>, a digital agency focused on
-helping businesses build a strong and professional online presence.
-</p>
 
 <p>
-Neroxa Digital provides website development,
-AI automation, SEO, branding and digital marketing
-solutions designed to help businesses grow online.
+
+Vansh Pratihar is the Founder & CEO of
+<strong>Neroxa Digital</strong>, a digital agency
+focused on helping businesses build a strong,
+modern and professional online presence.
+
 </p>
+
+
+<p>
+
+His work focuses on website development,
+AI automation, SEO, branding, digital marketing
+and technology-driven business solutions.
+
+</p>
+
 
 <a href="../" class="cta">
 Visit Neroxa Digital
@@ -284,6 +776,11 @@ Visit Neroxa Digital
 </section>
 
 
+
+<!-- =========================
+     ABOUT
+========================= -->
+
 <section class="section">
 
 <div class="container">
@@ -292,23 +789,45 @@ Visit Neroxa Digital
 About Vansh Pratihar
 </h2>
 
-<p>
-Vansh Pratihar is the founder of Neroxa Digital.
-Through the agency, he works on digital solutions that
-help businesses establish their online presence and
-connect with more customers.
-</p>
 
 <p>
-His work focuses on modern website development,
-digital marketing, branding, SEO and AI-powered
-business automation.
+
+Vansh Pratihar is an entrepreneur and the founder
+of Neroxa Digital. He is focused on building
+digital products, businesses and technology-driven
+solutions that can create long-term value.
+
+</p>
+
+
+<p>
+
+His entrepreneurial journey started with a focus
+on digital services and business solutions, with
+the long-term goal of creating larger technology
+ventures and companies.
+
+</p>
+
+
+<p>
+
+Rather than focusing only on a single business,
+his vision is to continuously learn, build,
+experiment and create businesses that can grow
+on a global scale.
+
 </p>
 
 </div>
 
 </section>
 
+
+
+<!-- =========================
+     NEROXA DIGITAL
+========================= -->
 
 <section class="section">
 
@@ -318,12 +837,28 @@ business automation.
 Neroxa Digital
 </h2>
 
+
 <p>
-Neroxa Digital is a digital agency founded by
-Vansh Pratihar. The agency provides premium
-digital solutions including website development,
-AI automation, SEO, branding and digital marketing.
+
+<strong>Neroxa Digital</strong> is a digital agency
+founded by Vansh Pratihar.
+
+The agency provides premium digital solutions
+including website development, AI automation,
+SEO, branding, digital marketing and other
+technology-focused services.
+
 </p>
+
+
+<p>
+
+The goal of Neroxa Digital is to help businesses
+establish a strong digital identity and use
+modern technology to grow online.
+
+</p>
+
 
 <a href="../" class="cta">
 Explore Neroxa Digital
@@ -334,6 +869,198 @@ Explore Neroxa Digital
 </section>
 
 
+
+<!-- =========================
+     FUTURE VISION
+========================= -->
+
+<section class="section">
+
+<div class="container">
+
+<h2>
+Future Vision
+</h2>
+
+
+<div class="future">
+
+<div class="future-label">
+Long-Term Entrepreneurial Vision
+</div>
+
+
+<h3>
+Building Beyond One Business
+</h3>
+
+
+<p>
+
+Vansh Pratihar is currently focused on building
+Neroxa Digital while exploring ideas for another
+startup venture that he aims to develop in the
+future.
+
+</p>
+
+
+<p>
+
+His long-term ambition is to build a technology
+company and create businesses with global reach,
+strong teams and meaningful impact.
+
+</p>
+
+
+<p>
+
+The bigger vision is not limited to building a
+single agency. It is to become a successful
+entrepreneur, build multiple scalable ventures
+and work toward becoming a billionaire through
+long-term business creation, innovation and
+value creation.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     ENTREPRENEURIAL FOCUS
+========================= -->
+
+<section class="section">
+
+<div class="container">
+
+<h2>
+Entrepreneurial Focus
+</h2>
+
+
+<div class="vision-grid">
+
+
+<div class="vision-card">
+
+<h3>
+01 — Build
+</h3>
+
+<p>
+
+Building digital products, businesses and
+technology-driven solutions with a long-term
+perspective.
+
+</p>
+
+</div>
+
+
+
+<div class="vision-card">
+
+<h3>
+02 — Learn
+</h3>
+
+<p>
+
+Continuously learning about technology,
+business, marketing, AI and entrepreneurship.
+
+</p>
+
+</div>
+
+
+
+<div class="vision-card">
+
+<h3>
+03 — Scale
+</h3>
+
+<p>
+
+Creating systems, teams and businesses that
+can grow beyond local markets and reach a
+global audience.
+
+</p>
+
+</div>
+
+
+
+<div class="vision-card">
+
+<h3>
+04 — Create Impact
+</h3>
+
+<p>
+
+The ultimate goal is to create valuable
+companies, solve meaningful problems and
+build something that lasts.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     MISSION
+========================= -->
+
+<section class="section">
+
+<div class="container">
+
+<h2>
+Long-Term Mission
+</h2>
+
+
+<p class="mission">
+
+“Build. Learn. Scale. Repeat.”
+
+The vision is to start small, build strong
+businesses, create technology-driven companies
+and eventually build an entrepreneurial legacy
+on a global scale.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     OFFICIAL PROFILES
+========================= -->
+
 <section class="section">
 
 <div class="container">
@@ -342,25 +1069,36 @@ Explore Neroxa Digital
 Official Profiles
 </h2>
 
+
 <div class="links">
 
-<a href="https://x.com/vansh_pratihar"
+
+<a
+href="https://x.com/vansh_pratihar"
 target="_blank"
-rel="noopener">
+rel="noopener noreferrer"
+>
 X / Twitter
 </a>
 
-<a href="https://www.linkedin.com/in/neroxa-digital-72b333426/"
+
+<a
+href="https://www.linkedin.com/in/neroxa-digital-72b333426/"
 target="_blank"
-rel="noopener">
+rel="noopener noreferrer"
+>
 LinkedIn
 </a>
 
-<a href="https://www.instagram.com/neroxa_digital/"
+
+<a
+href="https://www.instagram.com/neroxa_digital/"
 target="_blank"
-rel="noopener">
+rel="noopener noreferrer"
+>
 Neroxa Digital Instagram
 </a>
+
 
 </div>
 
@@ -368,8 +1106,14 @@ Neroxa Digital Instagram
 
 </section>
 
+
 </main>
 
+
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -380,6 +1124,7 @@ Neroxa Digital Instagram
 </div>
 
 </footer>
+
 
 </body>
 
